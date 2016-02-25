@@ -6,6 +6,8 @@ $(document).ready(function(){
 	var toEvaluate;
 	var answer;
 
+	$('h1').hide().fadeIn('3000');
+
 	$('.keys').click(function(){
 		working.push($(this).text());
 		keys.push($(this).text());
@@ -22,9 +24,9 @@ $(document).ready(function(){
 	});
 
 	$('#equals').click(function(){
-		answer = eval(toEvaluate);
+		answer = eval(toEvaluate).toString().substr(0,13);
 		$('#result').html('<p>'+answer+'<p>')
-		working = [];
+		working = [answer];
 		keys=[];
 	});
 
@@ -52,6 +54,10 @@ $(document).ready(function(){
 			dec = "."+noDec;
 			toEvaluate = dec;
 		}
+		for (i=0;i<keyString.length;i++){
+			working.pop();
+		}
+		working.push(dec);
 		answer = eval(toEvaluate);
 		$('#result').html('<p>'+answer+'<p>')
 	});

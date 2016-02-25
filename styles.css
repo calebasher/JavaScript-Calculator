@@ -7,14 +7,32 @@ background: linear-gradient(to left, #FFA17F , #00223E); /* W3C, IE 10+/ Edge, F
 }
 
 p {
-font-family: roboto;
+font-family: 'DSEG', roboto;
 float: right;
 margin: 1px 19px;
 font-size: 16px;
 }
 
+h1 {
+	font-family: 'DSEG', roboto;
+	color: #ffffff;
+}
+
+@font-face { font-family: 'DSEG'; src: url('DSEG14Modern-Regular.woof') format('wood'), url('DSEG14Modern-Regular.ttf'); } 
+
+a {
+	color: #ffffff;
+}
+
+footer {
+	position: fixed;
+    bottom: 0;
+    margin-bottom: 10px;
+}
+
 #calculator {
-	padding-top: 50px;
+	padding-top: 15px;
+	padding-bottom: 100px;
 }
 
 #result {
