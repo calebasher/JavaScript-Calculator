@@ -8,26 +8,40 @@
 </head>
 <body>
 	<div class="container-fluid">
-		<div type="button" class="keys btn btn-primary">1</div>
-		<div type="button" class="keys btn btn-primary">2</div>
-		<div type="button" class="keys btn btn-primary">3</div>
-		<div type="button" class="keys btn btn-primary">4</div>
-		<div type="button" class="keys btn btn-primary">5</div>
-		<div type="button" class="keys btn btn-primary">6</div>
-		<div type="button" class="keys btn btn-primary">7</div>
-		<div type="button" class="keys btn btn-primary">8</div>
-		<div type="button" class="keys btn btn-primary">9</div>
-		<div type="button" class="keys btn btn-primary">0</div>
-		<div type="button" class="keys btn btn-primary">.</div>
-		<div type="button" class="keys btn btn-primary">+</div>
-		<div type="button" class="keys btn btn-primary">-</div>
-		<div type="button" class="keys btn btn-primary">*</div>
-		<div type="button" class="keys btn btn-primary">/</div>
-		<div id="percent" type="button" class="btn btn-primary">%</div>
-		<div id="cclear" type="button" class="btn btn-primary">ce</div>
-		<div id="aclear" type="button" class="btn btn-primary">ae</div>
-		<div id="equals" type="button" class="btn btn-primary">=</div>
-		<div id="result"></div>
+		<div id="calculator">
+			<div id="result"></div>
+			<div class="text-center">			
+				<div class="row calcrow">
+					<div id="aclear" type="button" class="btn btn-danger">ac</div>
+					<div id="cclear" type="button" class="btn btn-primary">ce</div>
+					<div id="percent" type="button" class="btn btn-primary">%</div>
+					<div type="button" class="operator btn btn-warning">/</div>
+				</div>
+				<div class="calcrow">
+					<div type="button" class="keys btn btn-primary">7</div>
+					<div type="button" class="keys btn btn-primary">8</div>
+					<div type="button" class="keys btn btn-primary">9</div>
+					<div type="button" class="operator btn btn-warning">*</div>
+				</div>
+				<div class="calcrow">
+					<div type="button" class="keys btn btn-primary">4</div>
+					<div type="button" class="keys btn btn-primary">5</div>
+					<div type="button" class="keys btn btn-primary">6</div>
+					<div type="button" class="operator btn btn-warning">-</div>
+				</div>
+				<div class="calcrow">
+					<div type="button" class="keys btn btn-primary">1</div>
+					<div type="button" class="keys btn btn-primary">2</div>
+					<div type="button" class="keys btn btn-primary">3</div>
+					<div type="button" class="operator btn btn-warning">+</div>
+				</div>
+				<div class="calcrow">
+					<div type="button" class="keys btn btn-primary">.</div>
+					<div type="button" class="keys btn btn-primary">0</div>	
+					<div id="equals" type="button" class="btn btn-primary">=</div>	
+				</div>
+			</div>
+		</div>
 	</div>
 	<script language="JavaScript" type="text/javascript"src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
 	<script language="JavaScript" type="text/javascript"src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
